@@ -3,4 +3,4 @@
 /*
 Check that no pairs of distinct process can be both in the critical section
 */
-A[] forall(i:myID) forall(j:myID) Gprocess(1)  : Gprocess(1).L0 ?> Gprocess(1).L4toLk
+GProcess(1).L0 --> GProcess(1).L4toLk
