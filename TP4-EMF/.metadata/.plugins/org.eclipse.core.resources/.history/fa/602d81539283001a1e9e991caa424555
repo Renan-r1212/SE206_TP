@@ -169,10 +169,13 @@ public class ChannelImpl extends IdentifiedElementImpl implements Channel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	public Task basicGetSourceTask() {
-		return sourcePort.getTask();
+		// TODO: implement this method to return the 'Source Task' reference
+		// -> do not perform proxy resolution
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -189,10 +192,13 @@ public class ChannelImpl extends IdentifiedElementImpl implements Channel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	public Task basicGetDestTask() {
-		return destPort.getTask();
+		// TODO: implement this method to return the 'Dest Task' reference
+		// -> do not perform proxy resolution
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
 	}
 
 	/**
