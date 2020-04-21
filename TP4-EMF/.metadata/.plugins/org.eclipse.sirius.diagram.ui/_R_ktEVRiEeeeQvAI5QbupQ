@@ -1,8 +1,8 @@
-#Tue Apr 21 07:36:22 CEST 2020
+#Tue Apr 21 08:32:56 CEST 2020
 print.useInches=true
 rulergrid.rulerunit=0
 print.margin.left=0.5
-viewport.x=267
+viewport.x=0
 rulergrid.gridlinestyle=6
 viewport.y=-30
 zoom=0.75

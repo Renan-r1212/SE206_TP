@@ -78,4 +78,5 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePort" lowerBound="1"
         eType="#//Port"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass"/>
 </ecore:EPackage>

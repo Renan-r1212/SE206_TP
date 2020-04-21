@@ -360,17 +360,17 @@ public class ChannelImpl extends IdentifiedElementImpl implements Channel {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(')');
-		return result.toString();
+	public String getQualifiedName() {
+		try {
+			return getSourceTask().getName() + '.' + getSourcePort().getName() + "->" + 
+				   getDestTask().getName() + '.' + getDestPort().getName();
+		}
+		catch (NullPointerException E) {
+			return "";
+		}
 	}
 
 } //ChannelImpl

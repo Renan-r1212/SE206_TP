@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dag:DagSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dag="https://mem4csd.telecom-paristech.fr/languages/dag/" name="Mydag">
+  <ownedTasks name="T1" period="50">
+    <ownedPorts name="o"/>
+  </ownedTasks>
+  <ownedTasks name="T2" period="100">
+    <ownedPorts name="i"/>
+    <ownedPorts name="o"/>
+  </ownedTasks>
+  <ownedTasks name="T3" period="50">
+    <ownedPorts name="i"/>
+    <ownedPorts name="o"/>
+  </ownedTasks>
+  <ownedTasks name="T4" period="125">
+    <ownedPorts name="i"/>
+  </ownedTasks>
+  <ownedTasks name="T5" period="200">
+    <ownedPorts name="i"/>
+  </ownedTasks>
+  <ownedTasks name="T6" period="50">
+    <ownedPorts name="i"/>
+    <ownedPorts name="o"/>
+  </ownedTasks>
+  <ownedTasks name="T7" period="75">
+    <ownedPorts name="i"/>
+  </ownedTasks>
+  <ownedChannels name="T1.o->T2.i" destPort="T2.i" sourcePort="T1.o"/>
+  <ownedChannels name="T1.o->T6.i" destPort="T6.i" sourcePort="T1.o"/>
+  <ownedChannels name="T2.o->T5.i" destPort="T5.i" sourcePort="T2.o"/>
+  <ownedChannels name="T2.o->T3.i" destPort="T3.i" sourcePort="T2.o"/>
+  <ownedChannels name="T6.o->T7.i" destPort="T7.i" sourcePort="T6.o"/>
+  <ownedChannels name="T3.o->T4.i" destPort="T4.i" sourcePort="T3.o"/>
+</dag:DagSpecification>
