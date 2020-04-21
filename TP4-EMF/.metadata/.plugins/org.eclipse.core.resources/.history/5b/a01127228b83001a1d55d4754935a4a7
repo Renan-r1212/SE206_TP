@@ -75,7 +75,7 @@
         eType="#//Task" changeable="false" volatile="true" transient="true" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="destTask" lowerBound="1"
         eType="#//Task" changeable="false" volatile="true" transient="true" derived="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePort" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destPort" lowerBound="1"
         eType="#//Port"/>
   </eClassifiers>
 </ecore:EPackage>
